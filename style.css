@@ -1,0 +1,187 @@
+/* Reset & Fonts */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Watermark Background */
+body::before {
+  content: "MILKHA SINGH";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.035);
+  white-space: nowrap;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero-img {
+  width: 160px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #f1c40f;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+  box-shadow: 0 0 15px rgba(241, 196, 15, 0.4);
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  margin: 0;
+  color: #f1c40f;
+}
+
+.overlay p {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* Quote */
+.quote {
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  background: #1a1a1a;
+  transition: all 0.3s ease-in-out;
+}
+
+.quote:hover {
+  color: #00e676;
+  transform: scale(1.02);
+}
+
+/* Photo Section */
+.photo-section {
+  background: #0e0e0e;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.photo-container {
+  display: inline-block;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.photo-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.photo-container img {
+  max-width: 320px;
+  border-radius: 20px;
+  border: 4px solid #29b6f6;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.caption {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Bio */
+.bio {
+  padding: 60px 40px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.bio h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff7043;
+}
+
+.bio p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Timeline */
+.timeline {
+  padding: 60px 30px;
+  background: #111;
+  text-align: center;
+}
+
+.timeline h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  color: #29b6f6;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.event {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #29b6f6;
+  transition: transform 0.3s;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+}
+
+.event h3 {
+  color: #f1c40f;
+  font-size: 22px;
+}
+
+.event p {
+  font-size: 16px;
+  color: #bbb;
+}
+
+/* Footer */
+footer {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+  background: #0d0d0d;
+  color: #888;
+  border-top: 1px solid #333;
+}
